@@ -1,11 +1,36 @@
 import './CampoTexto.css';
-const CampoTexto = () => {
+
+// let valor = '';
+
+// useState é um hook do React que permite adicionar o estado a um componente funcional.
+// const [valor, setValor] = useState('')
+
+
+
+
+
+
+const CampoTexto = (props) => {
+
+    const aoDigitado = (evento) => {
+        props.aoAlterado(evento.target.value);
+    }
+    
     return(
        <div className="campo-texto">
-            <label>Nome</label>
-            <input></input>
+
+            <label>{props.label}</label>
+
+            <input 
+            value={props.valor}
+            onChange={aoDigitado}
+            required={props.obrigatorio}
+            placeholder={props.placeholder}
+            >
+            </input>
+
        </div> 
     )
 }
 
-export default CampoTexto;
+export default CampoTexto;  

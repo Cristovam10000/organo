@@ -1,0 +1,24 @@
+.footer {
+    background: #6278F7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer img {
+    width: 20px;
+}
+
+.footer .logo {
+    width: 90px;
+}
