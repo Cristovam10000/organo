@@ -1,12 +1,74 @@
-# React + Vite
+# Organo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Banner do projeto](public/imagens/banner.png)
 
-Currently, two official plugins are available:
+Organo é uma aplicação web desenvolvida com **React** e **Vite** que permite cadastrar colaboradores e organizá-los em times. O projeto foi inspirado no curso da Alura e demonstra na prática o uso de componentes, estados e propriedades dentro do ecossistema React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Cadastro de colaboradores com nome, cargo, imagem e time correspondente.
+- Exibição dinâmica de cards de colaboradores divididos por time.
+- Seis times pré-definidos com cores personalizadas:
+  - Front-End
+  - Data Science
+  - DevOps
+  - UX e Design
+  - Mobile
+  - Inovação e Gestão
+- Rodapé com links para redes sociais e logo da aplicação.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do Projeto
+
+```
+organo/
+├── public/           # Arquivos públicos (imagens, favicon, etc.)
+├── src/
+│   ├── componentes/  # Componentes reutilizáveis (Banner, Formulário, Time, etc.)
+│   ├── assets/       # Recursos adicionais
+│   ├── App.jsx       # Componente principal
+│   └── main.jsx      # Ponto de entrada da aplicação
+├── package.json      # Dependências e scripts
+└── vite.config.js    # Configuração do Vite
+```
+
+## Como executar
+
+1. Instale as dependências do projeto:
+
+   ```bash
+   npm install
+   ```
+
+2. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+   A aplicação ficará disponível em `http://localhost:5173` (ou na porta indicada no terminal).
+
+3. Para gerar uma versão de produção, execute:
+
+   ```bash
+   npm run build
+   ```
+
+   Em seguida, você pode testar o build com:
+
+   ```bash
+   npm run preview
+   ```
+
+## Tecnologias Utilizadas
+
+- [React](https://react.dev)
+- [Vite](https://vitejs.dev)
+- [ESLint](https://eslint.org) para padronização do código
+
+## Contribuição
+
+Sinta-se à vontade para abrir _issues_ e _pull requests_ com melhorias, correções ou novas funcionalidades.
+
+---
+
+Feito com ❤️ por **Cristovam**.
